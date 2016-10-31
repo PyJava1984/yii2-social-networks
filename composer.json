@@ -1,0 +1,25 @@
+{
+    "name": "black-lamp/yii2-social-networks",
+    "description": "Widget for adding social networks for Yii2",
+    "keywords": ["yii2", "widget", "social", "networks"],
+    "type": "yii2-extension",
+    "license": "GNU Public License",
+    "support": {
+        "source": "https://github.com/black-lamp/yii2-social-networks",
+        "issues": "https://github.com/black-lamp/yii2-social-networks/issues"
+    },
+    "require": {
+        "yiisoft/yii2": ">=2.0.4"
+    },
+    "authors": [
+        {
+            "name": "Vladimir Kuprienko",
+            "email": "vldmr.kuprienko@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+          "bl\\socialNetworks\\": ""
+        }
+    }
+}
