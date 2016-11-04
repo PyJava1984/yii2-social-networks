@@ -60,6 +60,12 @@ class SocialNetworks extends Widget
         }
 
         foreach ($socialNetworksList as $name => $socialNetwork) {
+            if(isset($socialNetwork['attributes'])) {
+                foreach ($socialNetwork['attributes'] as $attr => $value) {
+                    $this->_attributes[$attr] = $value;
+                }
+            }
+
             $link = Html::a($socialNetwork['label'], $socialNetwork['link'], $this->_attributes);
             $this->_socialNetworks[$name] = $link;
         }

@@ -27,7 +27,7 @@ to the require section of your composer.json.
             'facebook' => [
                 'label' => 'Facebook',
                 'link' => 'https://facebook.com'
-            ]
+            ],
             'instagram' => [
                 'label' => 'Instagram',
                 'link' => 'https://instagram.com'
@@ -52,6 +52,7 @@ In this component you need to add and configure social network links
 |---|---|---|
 |label|string|Text for link|
 |link|string|Route to the current social network|
+|attributes|array|HTML attributes for link|
 
 Using
 -----
