@@ -2,6 +2,10 @@ Social networks widget for Yii2
 ===============================
 This widget adds links to social networks.
 
+[![Latest Stable Version](https://poser.pugx.org/black-lamp/yii2-social-networks/v/stable)](https://packagist.org/packages/black-lamp/yii2-social-networks)
+[![Latest Unstable Version](https://poser.pugx.org/black-lamp/yii2-social-networks/v/unstable)](https://packagist.org/packages/black-lamp/yii2-social-networks)
+[![License](https://poser.pugx.org/black-lamp/yii2-social-networks/license)](https://packagist.org/packages/black-lamp/yii2-social-networks)
+
 Installation
 ------------
 #### Run command
