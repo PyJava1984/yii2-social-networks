@@ -66,3 +66,7 @@ You should use the widget for adding the share links on page
         'componentId' => 'socialNetworks' // SocialNetworks component ID from application config
     ]) ?>
 ```
+
+Other extensions
+----------------
+[yii2-socialshare](https://github.com/black-lamp/yii2-socialshare) - this widget adds share links for social networks
