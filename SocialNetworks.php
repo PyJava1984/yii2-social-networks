@@ -64,7 +64,12 @@ class SocialNetworks extends Widget
             $attributes = $this->_attributes;
             if(isset($socialNetwork['attributes'])) {
                 foreach ($socialNetwork['attributes'] as $attr => $value) {
-                    $attributes[$attr] = $value;
+                    if($component->rewriteAttributes) {
+                        $attributes[$attr] = $value;
+                    }
+                    else {
+                        $attributes[$attr] .= sprintf(" %s", $value);
+                    }
                 }
             }
 

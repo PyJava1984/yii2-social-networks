@@ -12,6 +12,7 @@ use yii\base\Object;
  * @license https://opensource.org/licenses/GPL-3.0 GNU Public License
  *
  * @property array $networks
+ * @property boolean $rewriteAttributes
  * @property array $attributes
  * @property boolean $enableSeo
  * @property array $seoAttributes
@@ -37,6 +38,12 @@ class SocialNetworks extends Object
      * ```
      */
     public $networks = [];
+
+    /**
+     * @var boolean if set `true` global HTML attributes
+     * will be rewritten by custom
+     */
+    public $rewriteAttributes = true;
 
     /**
      * @var array of HTML attributes for link

@@ -48,6 +48,7 @@ In this component you need to add and configure social network links
 |---|---|---|---|
 |networks|array|-|Array of links to the social networks|
 |attributes|array|-|HTML attributes for all links|
+|rewriteAttributes|boolean|true|if set `true` global HTML attributes will be rewritten by custom|
 |enableSeo|boolean|true|Enable or disable appending SEO attributes from `seoAttributes` array for links|
 |seoAttributes|array|['target' => '_blank', 'rel' => 'nofollow']|Array of SEO attributes for links|
 
