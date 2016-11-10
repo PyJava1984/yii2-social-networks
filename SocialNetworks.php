@@ -55,18 +55,20 @@ class SocialNetworks extends Widget
         $component = Yii::$app->get($this->componentId);
         $socialNetworksList = $component->getNetworks();
 
+        $this->_attributes = $component->getAttributes();
         if($component->enableSeo) {
             $this->initSeoAttrs($component->getSeoAttributes());
         }
 
         foreach ($socialNetworksList as $name => $socialNetwork) {
+            $attributes = $this->_attributes;
             if(isset($socialNetwork['attributes'])) {
                 foreach ($socialNetwork['attributes'] as $attr => $value) {
-                    $this->_attributes[$attr] = $value;
+                    $attributes[$attr] = $value;
                 }
             }
 
-            $link = Html::a($socialNetwork['label'], $socialNetwork['link'], $this->_attributes);
+            $link = Html::a($socialNetwork['label'], $socialNetwork['link'], $attributes);
             $this->_socialNetworks[$name] = $link;
         }
     }

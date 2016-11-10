@@ -74,4 +74,13 @@ class SocialNetworks extends Object
     {
         return $this->seoAttributes;
     }
+
+    /**
+     * Getter for $attributes
+     * @return array
+     */
+    public function getAttributes()
+    {
+        return $this->attributes;
+    }
 }
