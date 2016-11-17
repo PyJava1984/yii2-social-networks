@@ -44,20 +44,20 @@ to the require section of your composer.json.
 In this component you need to add and configure social network links
 #### Component configuration properties
 
-| Option | Type | Default | Description |
+| Option | Description | Type | Default |
 |---|---|---|---|
-|networks|array|-|Array of links to the social networks|
-|attributes|array|-|HTML attributes for all links|
-|rewriteAttributes|boolean|true|if set `true` global HTML attributes will be rewritten by custom|
-|enableSeo|boolean|true|Enable or disable appending SEO attributes from `seoAttributes` array for links|
-|seoAttributes|array|['target' => '_blank', 'rel' => 'nofollow']|Array of SEO attributes for links|
+|networks|Array of links to the social networks|array|-|
+|attributes|HTML attributes for all links|array|-|
+|rewriteAttributes|If set `true` global HTML attributes will be rewritten by custom|boolean|true|
+|enableSeo|Enable or disable appending SEO attributes from `seoAttributes` array for links|boolean|true|
+|seoAttributes|Array of SEO attributes for links|array|['target' => '_blank', 'rel' => 'nofollow']|
 
 #### Configuration properties of networks array
-| Option | Type | Default |
+| Option | Description | Type |
 |---|---|---|
-|label|string|Text for link|
-|link|string|Route to the current social network|
-|attributes|array|HTML attributes for link|
+|label|Text for link|string|
+|link|Route to the current social network|string|
+|attributes|HTML attributes for link|array|
 
 Using
 -----
